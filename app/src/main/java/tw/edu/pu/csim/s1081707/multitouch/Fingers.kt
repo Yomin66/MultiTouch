@@ -44,7 +44,6 @@ class Fingers(context: Context) : View(context), ScaleGestureDetector.OnScaleGes
         var h:Int = (bitmap.height*factor/4).toInt()
         var DestRect:Rect = Rect(200, 300, w+200, h+300) //原圖較大，縮成1/4顯示
         canvas.drawBitmap(bitmap, SrcRect, DestRect, paint)
-
     }
     override fun onTouchEvent(event: MotionEvent): Boolean{
         //xPos = event.getX()
